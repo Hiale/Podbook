@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>Hiale.Podbook</RootNamespace>
+    <Authors>Hiale</Authors>
+    <Company>Hiale</Company>
+    <Copyright>Copyright © Hiale 2018</Copyright>
+    <Version>0.5</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\libs\SimpleHttpServer\SimpleHttpServer\HttpBuilder.cs" Link="httpServer\lib\HttpBuilder.cs" />
+    <Compile Include="..\libs\SimpleHttpServer\SimpleHttpServer\HttpProcessor.cs" Link="httpServer\lib\HttpProcessor.cs" />
+    <Compile Include="..\libs\SimpleHttpServer\SimpleHttpServer\Models\HttpRequest.cs" Link="httpServer\lib\Models\HttpRequest.cs" />
+    <Compile Include="..\libs\SimpleHttpServer\SimpleHttpServer\Models\HttpResponse.cs" Link="httpServer\lib\Models\HttpResponse.cs" />
+    <Compile Include="..\libs\SimpleHttpServer\SimpleHttpServer\Models\Route.cs" Link="httpServer\lib\Models\Route.cs" />
+    <Compile Include="..\libs\SimpleHttpServer\SimpleHttpServer\RouteHandlers\FileSystemRouteHandler.cs" Link="httpServer\lib\RouteHandlers\FileSystemRouteHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="taglib-sharp-netstandard2.0" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="httpServer\lib\Models\" />
+    <Folder Include="httpServer\lib\RouteHandlers\" />
+  </ItemGroup>
+
+</Project>
