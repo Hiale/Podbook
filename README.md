@@ -39,6 +39,7 @@ Podbook supports a command-line interface.
 ## Future improvements
 
 * More media types like Ogg
+* Image in Feed
 
 ## Credit
 
